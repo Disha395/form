@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form Example</title>
+    <style>
+        .submit{
+            background-color: green;
+            color: white;
+        }
+        .reset{
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Fill form:</h2>
+
+    <form action="/submit_form" method="post" class = >
+        <!-- Text Input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="password">Confirm Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <!-- DOB -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="phone">Phone no.:</label>
+        <input type="number" id="phone" name="phone" required><br><br>
+
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+        
+
+        <!-- Checkbox -->
+        <label for="subscribe">Subscribe to newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+
+        <!-- Dropdown/Select -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="other">India</option>
+        </select><br><br>
+
+        <!-- Textarea -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit" class="submit">
+        <input type="reset" value="Reset" class = "reset">
+
+
+    </form>
+
+</body>
+</html>
